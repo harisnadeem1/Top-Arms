@@ -1,0 +1,111 @@
+
+{
+      "firearms": [
+        {
+          "id": "tactical-shotgun",
+          "name": "Tactical Shotgun",
+          "image": "https://images.unsplash.com/photo-1557036329-8a0a1ac404f4",
+          "gallery": [
+            "https://images.unsplash.com/photo-1627843004068-121d4189e3a3", 
+            "https://images.unsplash.com/photo-1627843003634-f83138804e8d",
+            "https://images.unsplash.com/photo-1610212579809-3c886e09322a"
+          ],
+          "description": "High-quality tactical shotgun designed for home defense, security applications, and competitive sports shooting. Engineered for reliability and performance under pressure.",
+          "advantages": ["Durable Steel Construction", "High Precision Sights", "Easy Maintenance", "Ergonomic Grip"]
+        },
+        {
+          "id": "precision-rifle",
+          "name": "Precision Rifle",
+          "image": "https://images.unsplash.com/photo-1581622325828-b9a12193b216",
+          "gallery": [
+            "https://images.unsplash.com/photo-1578344682475-4c5a350f5a7e",
+            "https://images.unsplash.com/photo-1606775791244-77f6b93e3b7b",
+            "https://images.unsplash.com/photo-1517695321683-9b882329e4b7"
+          ],
+          "description": "A top-tier precision rifle built for long-range accuracy. Features a custom chassis, match-grade barrel, and adjustable stock for the perfect fit.",
+          "advantages": ["Sub-MOA Accuracy", "Adjustable Trigger", "Lightweight Chassis", "M-LOK Compatible"]
+        },
+        {
+          "id": "compact-pistol",
+          "name": "Compact Pistol",
+          "image": "https://images.unsplash.com/photo-1607592348574-84d59c4709d2",
+          "gallery": [
+            "https://images.unsplash.com/photo-1626291242333-a65a31a47893",
+            "https://images.unsplash.com/photo-1635384237936-72d96695b096",
+            "https://images.unsplash.com/photo-1599327599011-e40d66c33c3a"
+          ],
+          "description": "A reliable and concealable compact 9mm pistol ideal for everyday carry. Balances size, capacity, and shootability without compromise.",
+          "advantages": ["Concealable Profile", "High-Capacity Magazine", "Tritium Night Sights", "Striker-Fired System"]
+        }
+      ],
+      "ammunition": [
+        {
+          "id": "12-gauge-shells",
+          "name": "12 Gauge Shells",
+          "image": "https://images.unsplash.com/photo-1632435498301-315f67a2d4f2",
+          "gallery": [
+            "https://images.unsplash.com/photo-1631075039474-70966b9ef835",
+            "https://images.unsplash.com/photo-1631075039537-4d69345094d4"
+          ],
+          "description": "Premium grade 12 bore shotgun shells, offering consistent patterns and reliable performance for hunting, sport, or tactical use.",
+          "advantages": ["Consistent Firing", "Weather Resistant Sealant", "High-Velocity Load", "Affordable Bulk Options"]
+        },
+        {
+          "id": "9mm-cartridges",
+          "name": "9mm Cartridges",
+          "image": "https://images.unsplash.com/photo-1608722137617-a77d1d293f0b",
+          "gallery": [
+            "https://images.unsplash.com/photo-1580942095293-6447c2b53580",
+            "https://images.unsplash.com/photo-1621243767839-a1b89e5f5f33"
+          ],
+          "description": "Reliable and accurate 9mm full metal jacket ammunition for training and target practice. Manufactured to strict quality standards.",
+          "advantages": ["Clean-Burning Powder", "Non-Corrosive Primer", "Reloadable Brass Casing", "Consistent Velocity"]
+        },
+        {
+          "id": "308-match-grade",
+          "name": ".308 Match Grade",
+          "image": "https://images.unsplash.com/photo-1579758414502-3dc59461158a",
+          "gallery": [
+            "https://images.unsplash.com/photo-1604245749176-764e5c4d6c48",
+            "https://images.unsplash.com/photo-1604245749176-764e5c4d6c48"
+          ],
+          "description": "Precision-engineered .308 Winchester ammunition for competition shooting. Delivers exceptional accuracy and consistency at long ranges.",
+          "advantages": ["Uniform Bullet Weight", "Temperature-Stable Powder", "Match-Grade Primer", "Superior Ballistics"]
+        }
+      ],
+      "accessories": [
+        {
+          "id": "optics-scope",
+          "name": "Optics Scope",
+          "image": "https://images.unsplash.com/photo-1521405920951-a07c91357c32",
+          "gallery": [
+            "https://images.unsplash.com/photo-1623954388548-17b539c381c8",
+            "https://images.unsplash.com/photo-1609163212879-1667b3695272"
+          ],
+          "description": "High-precision variable power optics scope for rifles. Features multi-coated lenses, a first focal plane reticle, and robust construction.",
+          "advantages": ["Crystal Clear Vision", "Lightweight Design", "Shockproof & Fog-Proof", "Zero-Stop Turrets"]
+        },
+        {
+          "id": "tactical-holster",
+          "name": "Tactical Holster",
+          "image": "https://images.unsplash.com/photo-1619232879744-84f933634812",
+          "gallery": [
+            "https://images.unsplash.com/photo-1619232879744-84f933634812",
+            "https://images.unsplash.com/photo-1619232879744-84f933634812"
+          ],
+          "description": "A secure and durable Kydex holster with adjustable retention. Designed for a quick, smooth draw and compatibility with various carry positions.",
+          "advantages": ["Level II Retention", "Optics & Light Compatible", "Adjustable Cant", "Durable Kydex Material"]
+        },
+        {
+          "id": "weapon-light",
+          "name": "Weapon Light",
+          "image": "https://images.unsplash.com/photo-1631551611394-3e91d37803bd",
+          "gallery": [
+            "https://images.unsplash.com/photo-1631551611394-3e91d37803bd",
+            "https://images.unsplash.com/photo-1631551611394-3e91d37803bd"
+          ],
+          "description": "A compact and powerful weapon-mounted light providing 1000 lumens of blinding white light. Ideal for positive target identification in low-light conditions.",
+          "advantages": ["High-Lumen Output", "Rechargeable Battery", "Ambidextrous Switching", "Aircraft-Grade Aluminum"]
+        }
+      ]
+    }

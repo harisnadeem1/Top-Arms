@@ -1,0 +1,13 @@
+/* Style Swiper navigation arrows to be white and bold */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: white !important;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+/* Ensure no double arrows by hiding any unexpected pseudo-elements */
+.swiper-button-prev::before,
+.swiper-button-next::before {
+  display: none;
+}
