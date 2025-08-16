@@ -4,14 +4,25 @@ import { Autoplay, FreeMode } from "swiper/modules";
 import "swiper/css";
 
 const brands = [
-  { bg: "/home-page-brands/Winchester/background.jpg", logo: "/home-page-brands/Winchester/logo.png" },
-  { bg: "/home-page-brands/knight_armament/top-guns.jpg", logo: "/home-page-brands/knight_armament/logo.png" },
-  { bg: "/home-page-brands/Remington/top-guns.jpg", logo: "/home-page-brands/Remington/logo.png" },
-  { bg: "/home-page-brands/sig_sauer/top-guns.webp", logo: "/home-page-brands/sig_sauer/logo.png" },
-  { bg: "/home-page-brands/Smith_Wesson/top-guns.jpg", logo: "/home-page-brands/Smith_Wesson/logo.png" },
-  { bg: "/home-page-brands/strrum_Ruger/top-guns.jpg", logo: "/home-page-brands/strrum_Ruger/logo.png" },
-  { bg: "/brands/holosun-bg.jpg", logo: "/brands/holosun-logo.png" },
-  { bg: "/brands/nighthawk-bg.jpg", logo: "/brands/nighthawk-logo.png" },
+  { bg: "/home-page-brands/images/smith.jpg", logo: "/home-page-brands/logos/smith.png" },
+{ bg: "/home-page-brands/images/glock.jpg", logo: "/home-page-brands/logos/glock.png" },
+{ bg: "/home-page-brands/images/colt.webp", logo: "/home-page-brands/logos/colt.png" },
+{ bg: "/home-page-brands/images/heckler.jpg", logo: "/home-page-brands/logos/hk.png" },
+{ bg: "/home-page-brands/images/beretta.jpg", logo: "/home-page-brands/logos/beretta.png" },
+{ bg: "/home-page-brands/images/ruger.jpg", logo: "/home-page-brands/logos/ruger.png" },
+{ bg: "/home-page-brands/images/sig.jpg", logo: "/home-page-brands/logos/sig.png" },
+{ bg: "/home-page-brands/images/mossberg.jpg", logo: "/home-page-brands/logos/mossberg.png" },
+{ bg: "/home-page-brands/images/savage.jpg", logo: "/home-page-brands/logos/savage.png" },
+{ bg: "/home-page-brands/images/browning.webp", logo: "/home-page-brands/logos/browning.png" },
+{ bg: "/home-page-brands/images/taurus.jpg", logo: "/home-page-brands/logos/taurus.png" },
+{ bg: "/home-page-brands/images/benelli.jpg", logo: "/home-page-brands/logos/benelli.png" },
+{ bg: "/home-page-brands/images/remington.webp", logo: "/home-page-brands/logos/remingtom.png" },
+{ bg: "/home-page-brands/images/winchester.jpg", logo: "/home-page-brands/logos/winchester.png" },
+{ bg: "/home-page-brands/images/fn.jpg", logo: "/home-page-brands/logos/fn.png" },
+{ bg: "/home-page-brands/images/knight.jpg", logo: "/home-page-brands/logos/knight.png" },
+{ bg: "/home-page-brands/images/barrett.webp", logo: "/home-page-brands/logos/barrett.png" },
+{ bg: "/home-page-brands/images/spring.jpg", logo: "/home-page-brands/logos/spring.png" },
+
 ];
 
 export default function BrandSlider() {
