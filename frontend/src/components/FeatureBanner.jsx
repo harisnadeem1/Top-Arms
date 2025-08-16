@@ -1,82 +1,120 @@
-import React from 'react';
-    import { motion } from 'framer-motion';
-    import { Button } from '@/components/ui/button';
-    import { toast } from '@/components/ui/use-toast';
+import React from "react";
 
-    const notImplemented = () =>
-      toast({
-        title: "Heads up!",
-        description:
-          "🚧 This feature isn't implemented yet—but don't worry! You can request it in your next prompt! 🚀",
-      });
+export default function HeroSection({
+  backgroundImage = "/Home/features-section.jpeg",
+  headlineSmall = "TOP GUNS",
+  headlineMain = "YOUR TRUSTED DISTRIBUTOR OF QUALITY FIREARMS AND AMMUNITION IN THE REGION",
+  scrollText = "Built for the bold ~ Trusted by the elite ~",
+}) {
+  return (
+    <section
+      className="relative w-full h-[85vh] bg-cover bg-center flex items-center"
+      style={{
+        backgroundImage: `url('${backgroundImage}')`,
+        fontFamily: "'Kanit', sans-serif",
+        fontStyle: "italic",
+      }}
+    >
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-black bg-opacity-60"></div>
 
-    const marqueeVariants = {
-      animate: {
-        x: ['0%', '-50%'],
-        transition: {
-          x: {
-            repeat: Infinity,
-            repeatType: "loop",
-            duration: 20,
-            ease: "linear",
-          },
-        },
-      },
-    };
+      {/* Content */}
+      <div className="relative z-10 max-w-5xl px-6 md:px-12">
+        {/* Small Heading */}
+        <h4 className="text-white text-3xl sm:text-4xl font-extrabold mb-4">
+          <span className="relative inline-block">
+            {headlineSmall}
+            <span
+              className="absolute bottom-0 left-0 w-full h-1.5"
+              style={{ backgroundColor: "#ec5f00" }}
+            ></span>
+          </span>
+        </h4>
 
-    const HollowText = ({ children }) => (
-      <span className="headline text-4xl md:text-6xl lg:text-8xl text-stroke whitespace-nowrap px-8">
-        {children}
-      </span>
-    );
-      
-    export default function FeatureBanner() {
-      return (
-        <motion.section
-          id="feature"
-          className="relative py-20 sm:py-32 overflow-hidden"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true, amount: 0.2 }}
-          transition={{ duration: 0.6 }}
+        {/* Main Heading */}
+        <h1 className="text-white font-extrabold text-4xl sm:text-5xl md:text-6xl leading-tight">
+          {headlineMain.split("\n").map((line, idx) => (
+            <React.Fragment key={idx}>
+              {line}
+              <br />
+            </React.Fragment>
+          ))}
+        </h1>
+
+        {/* Buttons */}
+        <div className="mt-8 flex gap-4 flex-wrap">
+          <a
+            href="/about"
+            className="text-white font-semibold px-6 py-3 transition"
+            style={{
+              backgroundColor: "#ec5f00",
+              borderRadius: "5px",
+            }}
+            onMouseEnter={(e) =>
+              (e.currentTarget.style.backgroundColor = "#d65200")
+            }
+            onMouseLeave={(e) =>
+              (e.currentTarget.style.backgroundColor = "#ec5f00")
+            }
+          >
+            READ MORE ABOUT US
+          </a>
+          <a
+            href="/contact"
+            className="font-semibold px-6 py-3 transition"
+            style={{
+              border: "2px solid #ec5f00",
+              color: "#ec5f00",
+              borderRadius: "5px",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.backgroundColor = "#ec5f00";
+              e.currentTarget.style.color = "#fff";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.backgroundColor = "transparent";
+              e.currentTarget.style.color = "#ec5f00";
+            }}
+          >
+            SPEAK TO US
+          </a>
+        </div>
+      </div>
+
+      {/* Scrolling Outlined Text */}
+      <div className="absolute bottom-0 w-full overflow-hidden whitespace-nowrap py-8">
+        <div
+          className="inline-block"
+          style={{
+            animation: "scrollText 10s linear infinite",
+          }}
         >
-          <div className="absolute inset-0">
-            <img  class="w-full h-full object-cover" alt="Tactical operator in action" src="https://images.unsplash.com/photo-1486412625743-8354d663c409" loading="lazy" />
-          </div>
-          <div className="overlay-dark"></div>
-          <div className="absolute inset-0 bg-gradient-to-b from-black/80 to-background"></div>
-          
-          <div className="relative container-max text-center z-10 flex flex-col items-center">
-            <p className="eyebrow text-primary">TOP ARMS</p>
-            <h2 className="headline text-3xl sm:text-5xl my-4 max-w-3xl">
-              Engineered for the Decisive Moment
-            </h2>
-            <p className="subtext max-w-2xl mb-8">
-              We provide the tools that perform when it matters most. Uncompromising quality for the modern operator and enthusiast.
-            </p>
-            <Button
-              onClick={notImplemented}
-              size="lg"
-              className="uppercase tracking-wider font-extrabold text-white orange-gradient hover:brightness-110 transition-all shadow-2xl shadow-orange-900/40"
+          {[...Array(2)].map((_, idx) => (
+            <span
+              key={idx}
+              className="mx-6 text-transparent text-7xl sm:text-9xl font-extrabold tracking-wider uppercase"
+              style={{
+                WebkitTextStroke: "3px #ec5f00",
+                color: "transparent",
+              }}
             >
-              Discover Our Mandate
-            </Button>
-          </div>
+              {scrollText}
+            </span>
+          ))}
+        </div>
+      </div>
 
-          <div className="absolute bottom-0 left-0 right-0 py-8 z-0">
-            <div className="overflow-hidden">
-                <motion.div className="flex" variants={marqueeVariants} animate="animate">
-                    <HollowText>RELIABILITY</HollowText>
-                    <HollowText>PRECISION</HollowText>
-                    <HollowText>PERFORMANCE</HollowText>
-                    <HollowText>INNOVATION</HollowText>
-                    <HollowText>RELIABILITY</HollowText>
-                    <HollowText>PRECISION</HollowText>
-                    <HollowText>PERFORMANCE</HollowText>
-                    <HollowText>INNOVATION</HollowText>
-                </motion.div>
-            </div>
-          </div>
-        </motion.section>
-      );
-    }
+      {/* Animation Keyframes */}
+      <style>{`
+        @keyframes scrollText {
+          0% {
+            transform: translateX(0%);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
+        }
+      `}</style>
+    </section>
+  );
+}

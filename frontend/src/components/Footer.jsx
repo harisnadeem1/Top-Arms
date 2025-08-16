@@ -3,6 +3,7 @@ import React from 'react';
     import { Github, Twitter, Instagram } from 'lucide-react';
     import { Button } from './ui/button';
     import { Input } from './ui/input';
+    import { Link } from "react-router-dom";
 
     const notImplemented = () =>
       toast({
@@ -24,7 +25,7 @@ import React from 'react';
           <div className="container-max">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
               <div className="lg:col-span-1">
-                <img  class="w-auto h-10 object-contain mb-4" alt="Company logo footer" src="https://images.unsplash.com/photo-1675903734279-ba85dc148893" />
+                <img  class="w-auto h-14 object-contain mb-4" alt="Company logo footer" src="/logo/top-arms-logo.png" />
                 <p className="text-sm text-neutral-400 mb-6">
                   The premier destination for elite firearms, ammunition, and tactical gear.
                 </p>
@@ -45,12 +46,25 @@ import React from 'react';
             </div>
             <div className="mt-12 border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
               <p className="text-xs text-neutral-500 text-center sm:text-left">
-                © {year} Top Arms. All Rights Reserved. This is a fictional concept website.
+                © {year} Top Arms. All Rights Reserved.
               </p>
-              <div className="flex gap-4">
-                <button onClick={notImplemented} className="text-xs text-neutral-400 hover:text-primary transition-colors">Terms &amp; Conditions</button>
-                <button onClick={notImplemented} className="text-xs text-neutral-400 hover:text-primary transition-colors">Privacy Policy</button>
-              </div>
+              
+
+<div className="flex gap-4">
+  <Link
+    to="/policy/terms"
+    className="text-xs text-neutral-400 hover:text-primary transition-colors"
+  >
+    Terms &amp; Conditions
+  </Link>
+  <Link
+    to="/policy/privacy"
+    className="text-xs text-neutral-400 hover:text-primary transition-colors"
+  >
+    Privacy Policy
+  </Link>
+</div>
+
             </div>
           </div>
         </footer>

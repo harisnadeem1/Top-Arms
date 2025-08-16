@@ -4,11 +4,14 @@ import React from 'react';
     import BrandCarousel from "@/components/BrandCarousel";
     import FeatureBanner from "@/components/FeatureBanner";
     import Categories from "@/components/Categories";
+    import ShowCase from "@/components/ShowcaseSection";
+
 
     const sections = [
-      { id: "brands", component: BrandCarousel },
-      { id: "feature", component: FeatureBanner },
+      // { id: "brands", component: BrandCarousel },
       { id: "categories", component: Categories },
+
+      { id: "feature", component: FeatureBanner },
     ];
     
     const AboutSection = React.memo(function AboutSection() {
@@ -62,7 +65,8 @@ import React from 'react';
       return (
         <>
           <Hero />
-          <AboutSection />
+          <ShowCase />
+          {/* <AboutSection /> */}
           {sections.map(({ id, component: Component }) => (
             <Component key={id} />
           ))}

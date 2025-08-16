@@ -75,7 +75,7 @@
         @apply text-xs tracking-[0.2em] uppercase text-[hsl(var(--muted-foreground))];
       }
       .headline {
-        @apply font-black tracking-wider uppercase;
+        @apply font-black tracking-normal uppercase;
         font-family: 'Anton', sans-serif;
       }
       .subtext {

@@ -1,0 +1,82 @@
+{
+  "terms": {
+    "title": "Terms & Conditions",
+    "lastUpdated": "2025-08-16",
+    "sections": [
+      {
+        "heading": "1. Introduction",
+        "content": "Welcome to TOP ARMS SDN BHD (“we,” “our,” “us”). These Terms & Conditions govern your use of our website, products, and services. By accessing, browsing, or making a purchase from our platform, you acknowledge that you have read, understood, and agreed to be bound by these Terms & Conditions, as well as all applicable laws and regulations in Malaysia. If you do not agree to these terms, you should immediately cease using our website and services. We reserve the right to update, modify, or replace these terms at any time without prior notice, and it is your responsibility to review them periodically for changes."
+      },
+      {
+        "heading": "2. Eligibility",
+        "content": "You must be at least 18 years old (or the legal age of majority in your jurisdiction) to purchase any product from us. Purchases of firearms, ammunition, and certain accessories require valid licenses or permits as per Malaysian law under the Arms Act 1960 and related regulations. By placing an order, you confirm that you meet all legal requirements to purchase, possess, and use the product in your region. You may be required to provide identification, proof of age, and licensing documentation before we process or deliver your order."
+      },
+      {
+        "heading": "3. Orders & Payment",
+        "content": "All orders are subject to stock availability, verification of provided information, and legal compliance checks. We reserve the right to refuse or cancel orders if: (a) the licensing documents provided are invalid or incomplete; (b) the product is restricted in your jurisdiction; (c) payment authorization fails; or (d) there is evidence of fraudulent activity. Prices displayed on our website are in Malaysian Ringgit (MYR) and are subject to change without notice. Payment methods accepted include bank transfers, online payment gateways, and any other options stated on our website. Full payment must be received before any order is processed."
+      },
+      {
+        "heading": "4. Shipping & Delivery",
+        "content": "Firearms and ammunition will only be shipped in compliance with Malaysian law and may require collection in person at our licensed premises or delivery to another licensed firearms dealer. We may also require you to present original identification and licensing documents upon collection. Delivery timelines provided are estimates only and may be affected by licensing approval times, government regulations, or logistical delays. We are not responsible for delays caused by regulatory processes, customs clearance, or courier services."
+      },
+      {
+        "heading": "5. Product Descriptions & Accuracy",
+        "content": "We make every effort to ensure that product descriptions, images, and specifications on our website are accurate and up to date. However, we do not warrant that such information is free from errors, omissions, or inaccuracies. In the event of an error in pricing, description, or availability, we reserve the right to correct it and cancel any affected orders with a full refund."
+      },
+      {
+        "heading": "6. Returns & Refunds",
+        "content": "Due to the nature of firearms, ammunition, and certain tactical gear, these products are non-returnable except in cases of manufacturing defects or valid warranty claims. Any request for returns on eligible items must be made within 7 days of delivery and must be in unused, original condition with all packaging intact. The cost of return shipping will be borne by the customer unless the return is due to our error. Refunds will be processed within 14 business days after inspection and approval."
+      },
+      {
+        "heading": "7. Compliance with Laws",
+        "content": "It is your responsibility to ensure that the purchase, possession, and use of our products comply with all applicable federal, state, and local laws in your jurisdiction. We will not be held liable for any misuse, illegal possession, or prohibited use of products purchased from us."
+      },
+      {
+        "heading": "8. Limitation of Liability",
+        "content": "To the fullest extent permitted by law, TOP ARMS SDN BHD shall not be liable for any direct, indirect, incidental, or consequential damages arising from the use or misuse of our products or services. All firearms must be handled with extreme caution and in accordance with safety guidelines provided by the manufacturer."
+      },
+      {
+        "heading": "9. Governing Law & Dispute Resolution",
+        "content": "These Terms & Conditions are governed by the laws of Malaysia. Any disputes arising under these terms shall be subject to the exclusive jurisdiction of the courts of Malaysia. We encourage resolving disputes amicably through direct communication before pursuing legal remedies."
+      }
+    ]
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "2025-08-16",
+    "sections": [
+      {
+        "heading": "1. Information We Collect",
+        "content": "We collect personal information that you voluntarily provide when making a purchase, creating an account, contacting us, or subscribing to our services. This may include your name, address, email, phone number, date of birth, firearm license details, payment details, and any other relevant documentation. We may also collect technical information such as your IP address, browser type, and device information when you visit our website."
+      },
+      {
+        "heading": "2. How We Use Your Information",
+        "content": "Your data is used to: (a) process orders and verify eligibility; (b) deliver products and services; (c) comply with legal obligations under Malaysian firearms regulations; (d) provide customer support; (e) improve website functionality and user experience; and (f) send you marketing communications where you have given consent. We will not use your personal data for purposes other than those stated without your prior consent."
+      },
+      {
+        "heading": "3. Sharing of Information",
+        "content": "We do not sell, rent, or trade your personal data. However, we may share information with trusted service providers, including payment processors, licensed firearms dealers, delivery companies, and government authorities when required by law. These third parties are only authorized to use your information for the purpose of providing the contracted services."
+      },
+      {
+        "heading": "4. Data Security",
+        "content": "We implement physical, electronic, and administrative safeguards to protect your personal information from unauthorized access, disclosure, or misuse. While we strive to use commercially acceptable security measures, no method of transmission over the Internet or storage system is 100% secure, and we cannot guarantee absolute security."
+      },
+      {
+        "heading": "5. Cookies & Tracking",
+        "content": "Our website may use cookies, tracking pixels, and similar technologies to improve user experience, analyze site usage, and deliver relevant advertising. You can adjust your browser settings to block cookies, but some features of our site may not function properly as a result."
+      },
+      {
+        "heading": "6. Your Rights",
+        "content": "You have the right to: (a) request access to the personal information we hold about you; (b) request correction of inaccurate or incomplete data; (c) request deletion of your data where it is no longer necessary; and (d) withdraw consent for data processing at any time, subject to legal and contractual restrictions. To exercise these rights, contact us through the details provided on our website."
+      },
+      {
+        "heading": "7. Data Retention",
+        "content": "We will retain your personal information for as long as necessary to fulfill the purposes outlined in this Privacy Policy, comply with legal obligations, resolve disputes, and enforce agreements. Data related to firearm transactions may be retained for the period mandated by Malaysian law."
+      },
+      {
+        "heading": "8. Changes to This Policy",
+        "content": "We may update this Privacy Policy periodically to reflect changes in our practices, legal requirements, or other operational reasons. Any updates will be posted on our website with a revised 'Last Updated' date. Continued use of our services after such changes constitutes your acceptance of the revised policy."
+      }
+    ]
+  }
+}

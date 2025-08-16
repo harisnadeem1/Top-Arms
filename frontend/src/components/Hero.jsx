@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay, EffectFade } from 'swiper/modules';
 import 'swiper/css/effect-fade';
@@ -10,25 +10,35 @@ import './Hero.css';
 
 const slides = [
   {
-    headline: 'Precision Engineering, Unrivaled Performance',
-    subheading: 'Experience the pinnacle of firearm craftsmanship. Built for accuracy, reliability, and the most demanding missions.',
+    headline: 'We thrive through passion to be your number one dealer',
+    subheading: 'Offering you top quality firearms and ammunition brands to fulfill all your needs and beyond',
     imgAlt: 'Close-up of a high-end rifle on a dark background',
     imgDesc: 'A sleek, modern rifle with tactical attachments',
-    imgSrc: '/hero-slider/top-slide-2.jpg', // Rifle image
+    imgSrc: '/hero-slider/top-slide-2.jpg',
+    buttons: [
+      { text: 'Read More About Us', link: '/about' },
+      { text: 'Speak To Us', link: '/contact' }
+    ]
   },
   {
     headline: 'The Elite Standard in Tactical Gear',
     subheading: 'From optics to suppressors, equip yourself with accessories trusted by professionals worldwide.',
     imgAlt: 'A collection of tactical firearm accessories',
     imgDesc: 'An array of scopes, grips, and magazines on a textured surface',
-    imgSrc: '/hero-slider/top-slide-1.jpg', // Tactical accessories image
+    imgSrc: '/hero-slider/top-slide-1.jpg',
+    buttons: [
+      { text: 'Explore Collection', link: '/products' }
+    ]
   },
   {
     headline: 'A Legacy of Power and Reliability',
     subheading: 'Choose from a heritage of firearms known for their robust design and unwavering performance in any condition.',
     imgAlt: 'A classic, powerful handgun resting on a wooden table',
     imgDesc: 'A polished, heavy-caliber pistol with custom grips',
-    imgSrc: '/hero-slider/top-slide-3.jpg', // Handgun image
+    imgSrc: '/hero-slider/top-slide-3.jpg',
+    buttons: [
+      { text: 'View Firearms', link: '/category/firearms' }
+    ]
   },
 ];
 
@@ -84,14 +94,23 @@ export default function Hero() {
                 <p className="subtext mt-5 max-w-2xl mx-auto text-shadow font-kanit" style={{ fontFamily: 'Kanit, sans-serif' }}>
                   {slide.subheading}
                 </p>
-                <Button
-                  onClick={notImplemented}
-                  size="lg"
-                  className="mt-8 uppercase tracking-wider font-extrabold text-white orange-gradient hover:brightness-110 transition-all shadow-2xl shadow-orange-900/40 font-kanit"
-                  style={{ fontFamily: 'Kanit, sans-serif' }}
-                >
-                  Explore Collection
-                </Button>
+                <div className="mt-8 flex flex-wrap justify-center gap-4">
+                  {slide.buttons.map((btn, i) => (
+                    <a key={i} href={btn.link}>
+                      <Button
+                        size="lg"
+                        className={
+                          i === 1
+                            ? "uppercase italic tracking-wider font-extrabold border-2 text-white border-[#ec5f00] bg-transparent hover:bg-[#ec5f00] hover:text-white transition-all shadow-2xl font-kanit"
+                            : "uppercase italic tracking-wider font-extrabold text-white orange-gradient hover:brightness-110 transition-all shadow-2xl shadow-orange-900/40 font-kanit"
+                        }
+                        style={{ fontFamily: 'Kanit, sans-serif' }}
+                      >
+                        {btn.text}
+                      </Button>
+                    </a>
+                  ))}
+                </div>
               </motion.div>
             </div>
           </SwiperSlide>

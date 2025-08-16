@@ -14,6 +14,8 @@ import React, { Suspense, lazy } from "react";
     const CategoryPage = lazy(() => import('@/pages/CategoryPage'));
     const ProductDetailPage = lazy(() => import('@/pages/ProductDetailPage'));
     const ProductPage = lazy(() => import('@/pages/ProductsPageHead'));
+    const PolicyPage = lazy(() => import('@/pages/PolicyPage'));
+
 
 
     function ScrollToTop() {
@@ -74,6 +76,7 @@ import React, { Suspense, lazy } from "react";
                 <Route path="/team" element={<TeamPage />} />
                 <Route path="/team/:memberId" element={<TeamMemberPage />} />
                 <Route path="/products" element={<ProductPage />} />
+                <Route path="/policy/:type" element={<PolicyPage />} />
 
               </Routes>
             </Suspense>
