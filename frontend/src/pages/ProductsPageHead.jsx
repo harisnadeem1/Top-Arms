@@ -28,8 +28,10 @@ const productsData = [
       'Founded in 1852, Smith & Wesson is one of America’s most iconic firearms manufacturers. The company is best known for its high-quality revolvers, semi-automatic pistols, and rifles. Trusted by law enforcement, military, and civilian shooters, S&W firearms combine durability, accuracy, and classic American design.',
     features: ['Revolvers (Model 29, .44 Magnum)', 'M&P Pistols', 'AR-15 Rifles'],
     sliderImages: [
-      { src: '/Products/smith-wesson/smith-1.jpg', alt: 'Smith & Wesson revolver' },
-      { src: '/Products/smith-wesson/smith-2.jpg', alt: 'Smith & Wesson pistol' },
+      { src: '/Products/smith/smith-1.jpg', alt: 'Smith & Wesson revolver' },
+      { src: '/Products/smith/smith-2.jpg', alt: 'Smith & Wesson pistol' },
+      { src: '/Products/smith/smith-3.jpg', alt: 'Smith & Wesson pistol' },
+
     ],
     featureBg: '/background/background.jpg',
   },
@@ -42,8 +44,12 @@ const productsData = [
       'Glock, founded in Austria in 1963, revolutionized the firearms industry with its polymer-framed pistols. Known for their simplicity, reliability, and lightweight design, Glock pistols are used by countless police and military forces worldwide. They are also a top choice among civilian shooters.',
     features: ['Polymer Pistols', 'Safe Action Trigger System', '9mm Compact Series (G19)'],
     sliderImages: [
+      { src: '/Products/glock/glock-4.jpg', alt: 'Glock compact handgun' },
       { src: '/Products/glock/glock-1.jpg', alt: 'Glock pistol' },
+      { src: '/Products/glock/glock-3.jpg', alt: 'Glock compact handgun' },
       { src: '/Products/glock/glock-2.jpg', alt: 'Glock compact handgun' },
+
+
     ],
     featureBg: '/background/background.jpg',
   },
@@ -57,7 +63,10 @@ const productsData = [
     features: ['M1911 Pistol', 'AR-15/M4 Carbines', 'Single Action Army Revolver'],
     sliderImages: [
       { src: '/Products/colt/colt-1.jpg', alt: 'Colt M1911 pistol' },
-      { src: '/Products/colt/colt-2.jpg', alt: 'Colt AR rifle' },
+      { src: '/Products/colt/colt-2.webp', alt: 'Colt AR rifle' },
+      { src: '/Products/colt/colt-3.jpg', alt: 'Colt AR rifle' },
+      { src: '/Products/colt/colt-4.webp', alt: 'Colt AR rifle' },
+
     ],
     featureBg: '/background/background.jpg',
   },
@@ -70,8 +79,11 @@ const productsData = [
       'Founded in Germany, Heckler & Koch is synonymous with precision engineering and advanced military weapons. HK is famous for developing legendary firearms like the MP5 submachine gun, the G36 assault rifle, and modern pistols like the VP9, all known for reliability under the toughest conditions.',
     features: ['MP5 Submachine Gun', 'G36 Rifle', 'VP9 Pistol'],
     sliderImages: [
-      { src: '/Products/hk/hk-1.jpg', alt: 'Heckler & Koch MP5' },
-      { src: '/Products/hk/hk-2.jpg', alt: 'Heckler & Koch G36' },
+      { src: '/Products/heckler/heckler-1.avif', alt: 'Heckler & Koch MP5' },
+      { src: '/Products/heckler/heckler-2.webp', alt: 'Heckler & Koch G36' },
+      { src: '/Products/heckler/heckler-3.avif', alt: 'Heckler & Koch G36' },
+      { src: '/Products/heckler/heckler-4.avif', alt: 'Heckler & Koch G36' },
+
     ],
     featureBg: '/background/background.jpg',
   },
@@ -84,8 +96,11 @@ const productsData = [
       'Beretta, founded in 1526 in Italy, is one of the world’s oldest and most respected firearms companies. Its pistols and shotguns are widely used by military, law enforcement, and sports shooters. The Beretta 92 pistol became legendary as the U.S. military’s M9 sidearm.',
     features: ['92FS/M9 Pistol', 'Over-and-Under Shotguns', 'Sporting Rifles'],
     sliderImages: [
-      { src: '/Products/beretta/beretta-1.jpg', alt: 'Beretta M9 pistol' },
-      { src: '/Products/beretta/beretta-2.jpg', alt: 'Beretta shotgun' },
+      { src: '/Products/beretta/beretta-1.webp', alt: 'Beretta M9 pistol' },
+      { src: '/Products/beretta/beretta-2.webp', alt: 'Beretta shotgun' },
+      { src: '/Products/beretta/beretta-3.webp', alt: 'Beretta shotgun' },
+      { src: '/Products/beretta/beretta-4.jpeg', alt: 'Beretta shotgun' },
+
     ],
     featureBg: '/background/background.jpg',
   },
@@ -98,8 +113,8 @@ const productsData = [
       'Sturm, Ruger & Co., founded in 1949, is a leading American manufacturer known for affordable, rugged, and reliable firearms. Ruger produces a wide range including pistols, revolvers, rifles, and the popular 10/22 rimfire rifle.',
     features: ['Ruger 10/22 Rifle', 'GP100 Revolver', 'AR-556 Rifle'],
     sliderImages: [
-      { src: '/Products/ruger/ruger-1.jpg', alt: 'Ruger 10/22' },
-      { src: '/Products/ruger/ruger-2.jpg', alt: 'Ruger revolver' },
+      { src: '/Products/strum/strum-1.jpg', alt: 'Ruger 10/22' },
+      { src: '/Products/strum/strum-2.jpg', alt: 'Ruger revolver' },
     ],
     featureBg: '/background/background.jpg',
   },
@@ -113,7 +128,10 @@ const productsData = [
     features: ['P320/M17 Pistol', 'P226 Pistol', 'MCX Rifle'],
     sliderImages: [
       { src: '/Products/sig/sig-1.jpg', alt: 'SIG Sauer P320' },
-      { src: '/Products/sig/sig-2.jpg', alt: 'SIG Sauer MCX' },
+      { src: '/Products/sig/sig-2.avif', alt: 'SIG Sauer MCX' },
+      { src: '/Products/sig/sig-3.jpg', alt: 'SIG Sauer MCX' },
+      { src: '/Products/sig/sig-4.png', alt: 'SIG Sauer MCX' },
+
     ],
     featureBg: '/background/background.jpg',
   },
@@ -126,8 +144,11 @@ const productsData = [
       'Founded in 1919, Mossberg is one of the most respected shotgun manufacturers in the world. Best known for the Mossberg 500 series, these shotguns are widely used for hunting, sport shooting, and law enforcement.',
     features: ['Mossberg 500 Shotgun', 'Maverick 88', 'Hunting Rifles'],
     sliderImages: [
-      { src: '/Products/mossberg/mossberg-1.jpg', alt: 'Mossberg shotgun' },
-      { src: '/Products/mossberg/mossberg-2.jpg', alt: 'Mossberg hunting gun' },
+      { src: '/Products/mossberg/mossberg-1.webp', alt: 'Mossberg shotgun' },
+      { src: '/Products/mossberg/mossberg-2.png', alt: 'Mossberg hunting gun' },
+      { src: '/Products/mossberg/mossberg-3.webp', alt: 'Mossberg hunting gun' },
+      { src: '/Products/mossberg/mossberg-4.jpg', alt: 'Mossberg hunting gun' },
+
     ],
     featureBg: '/background/background.jpg',
   },
@@ -142,6 +163,9 @@ const productsData = [
     sliderImages: [
       { src: '/Products/savage/savage-1.jpg', alt: 'Savage bolt-action rifle' },
       { src: '/Products/savage/savage-2.jpg', alt: 'Savage hunting rifle' },
+      { src: '/Products/savage/savage-3.jpg', alt: 'Savage hunting rifle' },
+      { src: '/Products/savage/savage-4.jpg', alt: 'Savage hunting rifle' },
+
     ],
     featureBg: '/background/background.jpg',
   },
@@ -155,7 +179,10 @@ const productsData = [
     features: ['A5 Shotgun', 'BAR Rifle', 'Hi-Power Pistol'],
     sliderImages: [
       { src: '/Products/browning/browning-1.jpg', alt: 'Browning shotgun' },
-      { src: '/Products/browning/browning-2.jpg', alt: 'Browning Hi-Power' },
+      { src: '/Products/browning/browning-2.webp', alt: 'Browning Hi-Power' },
+      { src: '/Products/browning/browning-3.webp', alt: 'Browning Hi-Power' },
+      { src: '/Products/browning/browning-4.jpg', alt: 'Browning Hi-Power' },
+
     ],
     featureBg: '/background/background.jpg',
   },
@@ -169,7 +196,10 @@ const productsData = [
     features: ['Judge Revolver (.410/.45)', 'G Series Pistols', 'Revolvers'],
     sliderImages: [
       { src: '/Products/taurus/taurus-1.jpg', alt: 'Taurus revolver' },
-      { src: '/Products/taurus/taurus-2.jpg', alt: 'Taurus pistol' },
+      { src: '/Products/taurus/taurus-2.webp', alt: 'Taurus pistol' },
+      { src: '/Products/taurus/taurus-3.webp', alt: 'Taurus pistol' },
+      { src: '/Products/taurus/taurus-4.jpg', alt: 'Taurus pistol' },
+
     ],
     featureBg: '/background/background.jpg',
   },
@@ -184,6 +214,9 @@ const productsData = [
     sliderImages: [
       { src: '/Products/benelli/benelli-1.jpg', alt: 'Benelli M4' },
       { src: '/Products/benelli/benelli-2.jpg', alt: 'Benelli hunting shotgun' },
+      { src: '/Products/benelli/benelli-3.jpg', alt: 'Benelli hunting shotgun' },
+      { src: '/Products/benelli/benelli-4.jpg', alt: 'Benelli hunting shotgun' },
+
     ],
     featureBg: '/background/background.jpg',
   },
@@ -198,6 +231,9 @@ const productsData = [
     sliderImages: [
       { src: '/Products/remington/remington-1.jpg', alt: 'Remington Model 700' },
       { src: '/Products/remington/remington-2.jpg', alt: 'Remington 870 shotgun' },
+      { src: '/Products/remington/remington-3.jpg', alt: 'Remington 870 shotgun' },
+      { src: '/Products/remington/remington-4.jpg', alt: 'Remington 870 shotgun' },
+
     ],
     featureBg: '/background/background.jpg',
   },
@@ -212,6 +248,9 @@ const productsData = [
     sliderImages: [
       { src: '/Products/winchester/winchester-1.jpg', alt: 'Winchester lever-action rifle' },
       { src: '/Products/winchester/winchester-2.jpg', alt: 'Winchester ammunition' },
+      { src: '/Products/winchester/winchester-3.jpg', alt: 'Winchester ammunition' },
+      { src: '/Products/winchester/winchester-4.jpg', alt: 'Winchester ammunition' },
+
     ],
     featureBg: '/background/background.jpg',
   },
@@ -225,7 +264,10 @@ const productsData = [
     features: ['FN SCAR Rifle', 'Five-seveN Pistol', 'P90 Submachine Gun'],
     sliderImages: [
       { src: '/Products/fn/fn-1.jpg', alt: 'FN SCAR rifle' },
-      { src: '/Products/fn/fn-2.jpg', alt: 'FN Five-seveN pistol' },
+      { src: '/Products/fn/fn-2.webp', alt: 'FN Five-seveN pistol' },
+      { src: '/Products/fn/fn-3.jpg', alt: 'FN Five-seveN pistol' },
+      { src: '/Products/fn/fn-4.jpg', alt: 'FN Five-seveN pistol' },
+
     ],
     featureBg: '/background/background.jpg',
   },
@@ -238,8 +280,11 @@ const productsData = [
       'Knight’s Armament Company (KAC) is a U.S. defense contractor specializing in military rifles and accessories. KAC is best known for developing the M110 Semi-Automatic Sniper System (SASS) and advanced suppressors.',
     features: ['M110 SASS', 'SR-25 Rifle', 'Suppressors'],
     sliderImages: [
-      { src: '/Products/knights/knights-1.jpg', alt: "Knight's Armament SR-25" },
-      { src: '/Products/knights/knights-2.jpg', alt: "Knight's Armament suppressor" },
+      { src: '/Products/knight/knight-1.jpg', alt: "Knight's Armament SR-25" },
+      { src: '/Products/knight/knight-2.jpg', alt: "Knight's Armament suppressor" },
+      { src: '/Products/knight/knight-3.jpg', alt: "Knight's Armament suppressor" },
+      { src: '/Products/knight/knight-4.jpg', alt: "Knight's Armament suppressor" },
+
     ],
     featureBg: '/background/background.jpg',
   },
@@ -252,8 +297,7 @@ const productsData = [
       'Founded in 1982, Barrett Firearms is famous worldwide for its powerful long-range rifles. The Barrett M82 (.50 BMG) revolutionized anti-material sniper rifles and remains the gold standard for heavy-caliber precision shooting.',
     features: ['M82 .50 BMG Rifle', 'MRAD Sniper Rifle', 'Long-Range Precision'],
     sliderImages: [
-      { src: '/Products/barrett/barrett-1.jpg', alt: 'Barrett M82 sniper rifle' },
-      { src: '/Products/barrett/barrett-2.jpg', alt: 'Barrett MRAD rifle' },
+      { src: '/Products/barett/barett-1.jpg', alt: 'Barrett M82 sniper rifle' },
     ],
     featureBg: '/background/background.jpg',
   },
@@ -266,8 +310,10 @@ const productsData = [
       'Springfield Armory, originally founded in 1777 and revived as a commercial brand, is known for both classic rifles and modern pistols. Its M1A rifles and XD/ Hellcat pistols are highly regarded by professionals and enthusiasts.',
     features: ['M1A Rifle', 'XD-S Pistol Series', 'Hellcat Micro-Compact'],
     sliderImages: [
-      { src: '/Products/springfield/springfield-1.jpg', alt: 'Springfield M1A rifle' },
-      { src: '/Products/springfield/springfield-2.jpg', alt: 'Springfield Hellcat pistol' },
+      { src: '/Products/spring/spring-1.jpg', alt: 'Springfield M1A rifle' },
+            { src: '/Products/spring/spring-2.jpg', alt: 'Springfield M1A rifle' },
+      { src: '/Products/spring/spring-3.jpg', alt: 'Springfield M1A rifle' },
+
     ],
     featureBg: '/background/background.jpg',
   },

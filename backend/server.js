@@ -35,7 +35,7 @@ app.post("/subscribe", async (req, res) => {
           <p>The following email has subscribed to receive product updates and exclusive offers:</p>
           <p style="font-size:16px; font-weight:bold; color:#222;">${email}</p>
           <p style="margin-top:20px; font-size:14px; color:#555;">
-            ✨ This email was generated automatically from your website footer subscription form.
+            This email was generated automatically from your website footer subscription form.
           </p>
         </div>
       `,
