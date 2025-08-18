@@ -1,111 +1,406 @@
-
 {
-      "firearms": [
-        {
-          "id": "tactical-shotgun",
-          "name": "Tactical Shotgun",
-          "image": "https://images.unsplash.com/photo-1557036329-8a0a1ac404f4",
-          "gallery": [
-            "https://images.unsplash.com/photo-1627843004068-121d4189e3a3", 
-            "https://images.unsplash.com/photo-1627843003634-f83138804e8d",
-            "https://images.unsplash.com/photo-1610212579809-3c886e09322a"
-          ],
-          "description": "High-quality tactical shotgun designed for home defense, security applications, and competitive sports shooting. Engineered for reliability and performance under pressure.",
-          "advantages": ["Durable Steel Construction", "High Precision Sights", "Easy Maintenance", "Ergonomic Grip"]
-        },
-        {
-          "id": "precision-rifle",
-          "name": "Precision Rifle",
-          "image": "https://images.unsplash.com/photo-1581622325828-b9a12193b216",
-          "gallery": [
-            "https://images.unsplash.com/photo-1578344682475-4c5a350f5a7e",
-            "https://images.unsplash.com/photo-1606775791244-77f6b93e3b7b",
-            "https://images.unsplash.com/photo-1517695321683-9b882329e4b7"
-          ],
-          "description": "A top-tier precision rifle built for long-range accuracy. Features a custom chassis, match-grade barrel, and adjustable stock for the perfect fit.",
-          "advantages": ["Sub-MOA Accuracy", "Adjustable Trigger", "Lightweight Chassis", "M-LOK Compatible"]
-        },
-        {
-          "id": "compact-pistol",
-          "name": "Compact Pistol",
-          "image": "https://images.unsplash.com/photo-1607592348574-84d59c4709d2",
-          "gallery": [
-            "https://images.unsplash.com/photo-1626291242333-a65a31a47893",
-            "https://images.unsplash.com/photo-1635384237936-72d96695b096",
-            "https://images.unsplash.com/photo-1599327599011-e40d66c33c3a"
-          ],
-          "description": "A reliable and concealable compact 9mm pistol ideal for everyday carry. Balances size, capacity, and shootability without compromise.",
-          "advantages": ["Concealable Profile", "High-Capacity Magazine", "Tritium Night Sights", "Striker-Fired System"]
-        }
+  "firearms": [
+   {
+  "id": "shotgun",
+  "name": "Shotgun",
+  "image": "/items/firearms/shotguns/1.jpg",
+  "gallery": [
+     "/items/firearms/shotguns/1.jpg"
+  ],
+  "description": "Premium quality shotguns designed for hunting, sport shooting, and defense applications. Built for accuracy, power, and reliability, our shotguns meet the needs of both professionals and enthusiasts. We deal in all leading international brands of firearms as mentioned on our products page.",
+  "advantages": [
+    "Durable steel and polymer construction",
+    "High stopping power with smooth operation",
+    "Suitable for hunting, tactical, and defense use",
+    "Available in pump-action, semi-auto, and sporting models"
+  ]
+},
+{
+  "id": "sporting-gun",
+  "name": "Gun & Sporting Gun",
+  "image":  "/items/firearms/guns/1.jpg",
+  "gallery": [
+   "/items/firearms/guns/1.jpg"
+  ],
+  "description": "Sporting guns are designed for precision shooting sports and hunting. Engineered with balance, smooth trigger action, and refined craftsmanship, these firearms deliver excellent performance for competitive shooters. We deal in all leading international brands of firearms as mentioned on our products page.",
+  "advantages": [
+    "Lightweight and well-balanced design",
+    "Superior accuracy for sporting events",
+    "Customizable stocks and barrels",
+    "Trusted by competitive shooters worldwide"
+  ]
+},
+{
+  "id": "revolver",
+  "name": "Revolver",
+  "image": "/items/firearms/revolver/1.jpg",
+  "gallery": [
+    "/items/firearms/revolver/1.jpg"
+  ],
+  "description": "Classic and reliable revolvers built for self-defense, law enforcement, and collectors. Known for their robust design and easy operation, revolvers continue to be a trusted sidearm. We deal in all leading international brands of firearms as mentioned on our products page.",
+  "advantages": [
+    "Simple and reliable firing mechanism",
+    "Available in multiple calibers",
+    "Durable construction for long-term use",
+    "Preferred choice for collectors and defense"
+  ]
+},
+{
+  "id": "air-gun",
+  "name": "Air Gun",
+  "image": "/items/firearms/airgun/1.jpg",
+  "gallery": [
+    "/items/firearms/airgun/1.jpg"
+  ],
+  "description": "Air guns are versatile firearms used for training, sport shooting, and small game hunting. They provide affordable and safe practice while maintaining excellent accuracy. We deal in all leading international brands of firearms as mentioned on our products page.",
+  "advantages": [
+    "Affordable and easy to maintain",
+    "Low recoil and noise",
+    "Perfect for beginners and practice",
+    "Available in multiple pellet types"
+  ]
+},
+{
+  "id": "release-gun",
+  "name": "Release Gun",
+  "image": "/items/firearms/release/1.jpeg",
+  "gallery": [
+   "/items/firearms/release/1.jpeg"
+  ],
+  "description": "Release guns are specialized firearms designed for clay shooting and competitive trap events. With finely tuned triggers and barrels, they are built to perform under precision-based sports. We deal in all leading international brands of firearms as mentioned on our products page.",
+  "advantages": [
+    "Designed for clay and trap shooting",
+    "Adjustable stocks and smooth trigger pull",
+    "Highly accurate barrel design",
+    "Trusted choice for competitive shooters"
+  ]
+},
+{
+  "id": "nail-shotgun",
+  "name": "Nail Shotgun",
+  "image": "/items/firearms/nail/1.avif",
+  "gallery": [
+    "/items/firearms/nail/1.avif"
+  ],
+  "description": "Nail shotguns are specialized industrial firearms used for fastening nails into hard surfaces. They are widely used in construction and industrial applications for speed and reliability. We deal in all leading international brands of firearms as mentioned on our products page.",
+  "advantages": [
+    "Powerful and reliable fastening",
+    "Available in different cartridge strengths",
+    "Durable construction for industrial use",
+    "Safe and efficient when used with proper tools"
+  ]
+},
+{
+  "id": "spare-barrel",
+  "name": "Spare Barrel",
+  "image": "/items/firearms/spare/1.jpg",
+  "gallery": [
+   "/items/firearms/spare/1.jpg"
+  ],
+  "description": "Spare barrels provide firearm owners with the flexibility to change calibers or replace worn-out parts. Manufactured from high-grade steel, they ensure durability and reliable performance. We deal in all leading international brands of firearms as mentioned on our products page.",
+  "advantages": [
+    "Made from high-strength steel",
+    "Ensures reliable performance",
+    "Allows caliber changes and upgrades",
+    "Increases firearm lifespan"
+  ]
+},
+{
+  "id": "paintball-marker",
+  "name": "Paintball Marker",
+  "image": "/items/firearms/paint/1.jpg",
+  "gallery": [
+    "/items/firearms/paint/1.jpg"
+  ],
+  "description": "Paintball markers are designed for recreational shooting sports, offering fun and safe experiences. Built with precision, they provide accurate shooting in competitive paintball games. We deal in all leading international brands of firearms as mentioned on our products page.",
+  "advantages": [
+    "Safe for recreational use",
+    "Accurate and reliable performance",
+    "Durable for extended play",
+    "Widely used in paintball competitions"
+  ]
+},
+{
+  "id": "rifle",
+  "name": "Rifle",
+  "image": "/items/firearms/rifiles/1.webp",
+  "gallery": [
+    "/items/firearms/rifiles/1.webp"
+  ],
+  "description": "Rifles are precision-engineered firearms designed for accuracy, range, and versatility. They are available in bolt-action, semi-automatic, and tactical configurations, making them suitable for hunting, sport shooting, law enforcement, and military use. With high muzzle velocity and consistent performance, rifles remain the preferred choice for marksmen and professionals. We deal in all leading international brands of firearms as mentioned on our products page.",
+  "advantages": [
+    "Superior accuracy over long distances",
+    "Available in multiple calibers and configurations",
+    "Reliable for hunting, defense, and tactical use",
+    "Ergonomic and durable design for field conditions"
+  ]
+}
+
+
+  ],
+  "ammunition": [
+    {
+      "id": "12-bore",
+      "name": "12 Bore",
+      "image": "/items/ammunition/12-bore/12-bore-1.jpg",
+      "gallery": [
+        "/items/ammunition/12-bore/12-bore-1.jpg"
       ],
-      "ammunition": [
-        {
-          "id": "12-gauge-shells",
-          "name": "12 Gauge Shells",
-          "image": "https://images.unsplash.com/photo-1632435498301-315f67a2d4f2",
-          "gallery": [
-            "https://images.unsplash.com/photo-1631075039474-70966b9ef835",
-            "https://images.unsplash.com/photo-1631075039537-4d69345094d4"
-          ],
-          "description": "Premium grade 12 bore shotgun shells, offering consistent patterns and reliable performance for hunting, sport, or tactical use.",
-          "advantages": ["Consistent Firing", "Weather Resistant Sealant", "High-Velocity Load", "Affordable Bulk Options"]
-        },
-        {
-          "id": "9mm-cartridges",
-          "name": "9mm Cartridges",
-          "image": "https://images.unsplash.com/photo-1608722137617-a77d1d293f0b",
-          "gallery": [
-            "https://images.unsplash.com/photo-1580942095293-6447c2b53580",
-            "https://images.unsplash.com/photo-1621243767839-a1b89e5f5f33"
-          ],
-          "description": "Reliable and accurate 9mm full metal jacket ammunition for training and target practice. Manufactured to strict quality standards.",
-          "advantages": ["Clean-Burning Powder", "Non-Corrosive Primer", "Reloadable Brass Casing", "Consistent Velocity"]
-        },
-        {
-          "id": "308-match-grade",
-          "name": ".308 Match Grade",
-          "image": "https://images.unsplash.com/photo-1579758414502-3dc59461158a",
-          "gallery": [
-            "https://images.unsplash.com/photo-1604245749176-764e5c4d6c48",
-            "https://images.unsplash.com/photo-1604245749176-764e5c4d6c48"
-          ],
-          "description": "Precision-engineered .308 Winchester ammunition for competition shooting. Delivers exceptional accuracy and consistency at long ranges.",
-          "advantages": ["Uniform Bullet Weight", "Temperature-Stable Powder", "Match-Grade Primer", "Superior Ballistics"]
-        }
+      "description": "The 12 bore shotgun cartridge is the most widely used ammunition type for hunting, sport shooting, and personal defense. Known for its versatility, it can fire birdshot, buckshot, or slugs with excellent stopping power. Its balance of performance and availability makes it the standard choice for professionals and enthusiasts alike.",
+      "advantages": [
+        "Versatile ammunition for multiple uses",
+        "High stopping power with buckshot and slugs",
+        "Widely available and affordable",
+        "Trusted by hunters and security forces worldwide"
+      ]
+    },
+    {
+      "id": "16-bore",
+      "name": "16 Bore",
+      "image": "/items/ammunition/16-bore/16-bore.webp",
+      "gallery": [
+        "/items/ammunition/16-bore/16-bore.webp"
       ],
-      "accessories": [
-        {
-          "id": "optics-scope",
-          "name": "Optics Scope",
-          "image": "https://images.unsplash.com/photo-1521405920951-a07c91357c32",
-          "gallery": [
-            "https://images.unsplash.com/photo-1623954388548-17b539c381c8",
-            "https://images.unsplash.com/photo-1609163212879-1667b3695272"
-          ],
-          "description": "High-precision variable power optics scope for rifles. Features multi-coated lenses, a first focal plane reticle, and robust construction.",
-          "advantages": ["Crystal Clear Vision", "Lightweight Design", "Shockproof & Fog-Proof", "Zero-Stop Turrets"]
-        },
-        {
-          "id": "tactical-holster",
-          "name": "Tactical Holster",
-          "image": "https://images.unsplash.com/photo-1619232879744-84f933634812",
-          "gallery": [
-            "https://images.unsplash.com/photo-1619232879744-84f933634812",
-            "https://images.unsplash.com/photo-1619232879744-84f933634812"
-          ],
-          "description": "A secure and durable Kydex holster with adjustable retention. Designed for a quick, smooth draw and compatibility with various carry positions.",
-          "advantages": ["Level II Retention", "Optics & Light Compatible", "Adjustable Cant", "Durable Kydex Material"]
-        },
-        {
-          "id": "weapon-light",
-          "name": "Weapon Light",
-          "image": "https://images.unsplash.com/photo-1631551611394-3e91d37803bd",
-          "gallery": [
-            "https://images.unsplash.com/photo-1631551611394-3e91d37803bd",
-            "https://images.unsplash.com/photo-1631551611394-3e91d37803bd"
-          ],
-          "description": "A compact and powerful weapon-mounted light providing 1000 lumens of blinding white light. Ideal for positive target identification in low-light conditions.",
-          "advantages": ["High-Lumen Output", "Rechargeable Battery", "Ambidextrous Switching", "Aircraft-Grade Aluminum"]
-        }
+      "description": "The 16 bore cartridge offers a balance between the heavy 12 bore and the lighter 20 bore. It is ideal for hunters who want manageable recoil with effective performance on birds and medium game. Though less common, it is favored by traditional shooters for its classic feel.",
+      "advantages": [
+        "Balanced power and recoil",
+        "Suitable for both small and medium game",
+        "Traditional choice with strong heritage",
+        "Efficient for upland bird hunting"
+      ]
+    },
+    {
+      "id": "20-bore",
+      "name": "20 Bore",
+      "image": "/items/ammunition/20-bore/20-bore-1.jpg",
+      "gallery": [
+        "/items/ammunition/20-bore/20-bore-1.jpg",
+        "/items/ammunition/20-bore/20-bore-2.jpg",
+        "/items/ammunition/20-bore/20-bore-3.jpg"
+      ],
+      "description": "The 20 bore shotgun cartridge is popular for sport shooting and small-game hunting. Its lighter recoil makes it easier to handle, especially for beginners or those who prefer faster follow-up shots. Despite its smaller size, it delivers consistent performance in the field.",
+      "advantages": [
+        "Light recoil for better control",
+        "Great for youth and beginner shooters",
+        "Effective for small game and birds",
+        "Faster target acquisition due to lower recoil"
+      ]
+    },
+    {
+      "id": "410-bore",
+      "name": "410 Bore",
+      "image": "/items/ammunition/410-bore/410-bore-1.jpg",
+      "gallery": [
+        "/items/ammunition/410-bore/410-bore-1.jpg",
+        "/items/ammunition/410-bore/410-bore-2.jpg",
+        "/items/ammunition/410-bore/410-bore-3.jpg",
+        "/items/ammunition/410-bore/410-bore-4.jpg",
+        "/items/ammunition/410-bore/410-bore-5.jpg",
+        "/items/ammunition/410-bore/410-bore-6.jpg"
+      ],
+      "description": "The .410 bore cartridge is a lightweight shotgun round commonly used for training, pest control, and small-game hunting. Its minimal recoil makes it beginner-friendly, while still providing adequate performance at short ranges.",
+      "advantages": [
+        "Extremely low recoil",
+        "Perfect for training new shooters",
+        "Lightweight and easy to carry in bulk",
+        "Good for pest control and small game"
+      ]
+    },
+    {
+      "id": "revolver-ammo",
+      "name": "Revolver Ammunition",
+      "image": "/items/ammunition/revolver/1.jpg",
+      "gallery": [
+        "/items/ammunition/revolver/1.jpg",
+        "/items/ammunition/revolver/2.jpg"
+      ],
+      "description": "Revolver ammunition is designed for classic handguns such as the .38 Special and .357 Magnum. Known for reliability, these rounds are widely used for personal defense, law enforcement, and sport shooting. Available in both target loads and high-powered defense cartridges.",
+      "advantages": [
+        "Reliable ignition in revolver platforms",
+        "Available in various calibers",
+        "Effective for both defense and sport",
+        "Proven track record in law enforcement"
+      ]
+    },
+    {
+      "id": "9mm",
+      "name": "9mm Ammunition",
+      "image": "/items/ammunition/9mm/9mm-1.jpg",
+      "gallery": [
+        "/items/ammunition/9mm/9mm-1.jpg",
+        "/items/ammunition/9mm/9mm-2.jpg"
+      ],
+      "description": "The 9mm cartridge is the most widely used handgun ammunition in the world. Trusted by military, police, and civilian shooters alike, it offers excellent balance between recoil, accuracy, and stopping power. Ideal for both defense and target practice.",
+      "advantages": [
+        "Global standard for handguns",
+        "Low recoil with high accuracy",
+        "Affordable and widely available",
+        "Effective for defense and training"
+      ]
+    },
+    {
+      "id": "chalk-rounds",
+      "name": "Chalk Rounds",
+      "image": "/items/ammunition/chalk/chalk-1.webp",
+      "gallery": [
+        "/items/ammunition/chalk/chalk-1.webp",
+        "/items/ammunition/chalk/chalk-2.webp"
+      ],
+      "description": "Chalk rounds are non-lethal training ammunition used for practice, signaling, or riot control. They leave a visible mark on impact, making them excellent for drills and simulations without live fire risks.",
+      "advantages": [
+        "Safe for training and simulation",
+        "Visible marking for accuracy drills",
+        "Non-lethal alternative to live rounds",
+        "Used in law enforcement and military training"
+      ]
+    },
+    {
+      "id": "nail-shotgun",
+      "name": "Nail Shotgun Cartridges",
+      "image": "/items/ammunition/nail/nail-1.avif",
+      "gallery": [
+        "/items/ammunition/nail/nail-1.avif",
+        "/items/ammunition/nail/nail-2.avif"
+      ],
+      "description": "Nail shotgun cartridges are specialized industrial loads used in construction for fixing nails into hard surfaces. They provide a quick and powerful solution for fastening, commonly used with nail guns and industrial tools.",
+      "advantages": [
+        "Strong industrial fastening power",
+        "Reliable ignition for construction tools",
+        "Available in multiple strength levels",
+        "Safe when used with proper equipment"
+      ]
+    },
+    {
+      "id": "air-gun-pellets",
+      "name": "Air Gun Pellets",
+      "image": "/items/ammunition/pellets/pellets-1.jpg",
+      "gallery": [
+        "/items/ammunition/pellets/pellets-1.jpg",
+        "/items/ammunition/pellets/pellets-2.webp"
+      ],
+      "description": "Air gun pellets are designed for air rifles and pistols, offering a cost-effective and accurate solution for training, plinking, and pest control. Available in multiple shapes such as wadcutter, domed, and pointed for different purposes.",
+      "advantages": [
+        "Low cost per shot",
+        "Quiet and beginner-friendly",
+        "Ideal for practice and small pests",
+        "Available in multiple pellet shapes"
       ]
     }
+  ],
+  "accessories": [
+    {
+      "id": "fire-alarms",
+      "name": "Fire Alarms",
+      "image": "/items/accessories/alarms/1.jpg",
+      "gallery": [
+        "/items/accessories/alarms/1.jpg"
+      ],
+      "description": "Fire alarms are essential safety devices designed to detect smoke, fire, or hazardous gases and provide early warnings to protect lives and property. They are widely used in residential, industrial, and commercial environments, with modern alarms featuring advanced sensors, loud sirens, and strobe lights.",
+      "advantages": [
+        "Early fire and smoke detection",
+        "Audible and visual alerts",
+        "Integration with security systems",
+        "Compliance with safety standards"
+      ]
+    },
+    {
+      "id": "firearms-accessories",
+      "name": "Firearms Accessories",
+      "image": "/items/accessories/accessories/1.jpg",
+      "gallery": [
+       "/items/accessories/accessories/1.jpg"
+      ],
+      "description": "Firearm accessories improve performance, usability, and safety. This includes cleaning kits, grips, extra magazines, bipods, and slings. They allow shooters to customize and maintain their weapons for professional, tactical, or recreational use.",
+      "advantages": [
+        "Enhanced accuracy and control",
+        "Durable materials for long-term use",
+        "Customizable for different needs",
+        "Essential for firearm care and maintenance"
+      ]
+    },
+    {
+      "id": "training",
+      "name": "Training Equipment",
+      "image": "/items/accessories/training/1.webp",
+      "gallery": [
+        "/items/accessories/training/1.webp"
+      ],
+      "description": "Training gear includes dummy rounds, chalk rounds, shooting targets, and simulators for skill development. It ensures safe and effective practice for both beginners and professionals, offering a controlled environment for confidence building.",
+      "advantages": [
+        "Safe training without live ammo",
+        "Cost-effective practice",
+        "Skill improvement for all levels",
+        "Used in police and military drills"
+      ]
+    },
+    {
+      "id": "holsters-belt",
+      "name": "Holsters & Belt",
+      "image": "/items/accessories/belts/1.png",
+      "gallery": [
+        "/items/accessories/belts/1.png",
+        "/items/accessories/belts/2.png",
+        "/items/accessories/belts/3.jpg"
+      ],
+      "description": "Holsters and belts provide secure carrying solutions for firearms and gear. Made of Kydex, nylon, or leather, they ensure weapon retention, quick access, and support for magazines and accessories during tactical or concealed carry.",
+      "advantages": [
+        "Quick and smooth weapon draw",
+        "Secure retention system",
+        "Durable build materials",
+        "Supports multiple carry positions"
+      ]
+    },
+    {
+      "id": "knives-tools",
+      "name": "Knives & Tools",
+      "image": "/items/accessories/knives/1.webp",
+      "gallery": [
+        "/items/accessories/knives/1.webp",
+        "/items/accessories/knives/2.jpg",
+        "/items/accessories/knives/3.jpg"
+      ],
+      "description": "Knives and tools are vital for tactical, survival, and everyday use. From combat knives to multipurpose tools, they provide reliable performance for field operations, self-defense, and outdoor adventures.",
+      "advantages": [
+        "Rugged and versatile",
+        "Sharp stainless steel blades",
+        "Anti-slip ergonomic design",
+        "Useful for survival and combat"
+      ]
+    },
+    {
+      "id": "optics",
+      "name": "Optics",
+      "image": "/items/accessories/optics/1.webp",
+      "gallery": [
+        "/items/accessories/optics/1.webp",
+        "/items/accessories/optics/2.jpg",
+        "/items/accessories/optics/3.webp",
+        "/items/accessories/optics/4.jpg"
+      ],
+      "description": "Optics include rifle scopes, red dots, and magnifiers that improve precision and target acquisition. Built with multi-coated lenses and durable housings, optics are trusted for tactical, hunting, and competitive shooting.",
+      "advantages": [
+        "Enhanced precision and clarity",
+        "Faster target acquisition",
+        "Shockproof and weather-resistant",
+        "Suitable for all light conditions"
+      ]
+    },
+    {
+      "id": "protection-eyewear",
+      "name": "Protection – Eyewear",
+      "image": "/items/accessories/eye/1.avif",
+      "gallery": [
+        "/items/accessories/eye/1.avif",
+        "/items/accessories/eye/2.jpg",
+        "/items/accessories/eye/3.jpg"
+      ],
+      "description": "Protective eyewear shields eyes from ballistic impacts, UV rays, dust, and debris. Built with anti-fog, scratch-resistant, and UV-protected lenses, they ensure maximum safety and comfort during shooting and training.",
+      "advantages": [
+        "Ballistic impact resistance",
+        "Anti-fog and scratch resistant lenses",
+        "UV400 sun protection",
+        "Lightweight and comfortable fit"
+      ]
+    }
+  ]
+}

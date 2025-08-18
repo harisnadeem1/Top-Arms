@@ -5,15 +5,16 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay } from 'swiper/modules';
 import { Button } from '@/components/ui/button';
 import { toast } from '@/components/ui/use-toast';
-    import FeatureBanner from "@/components/FeatureBanner";
+import FeatureBanner from "@/components/FeatureBanner";
+import { Link } from "react-router-dom";
 
 
 const notImplemented = () =>
-    toast({
-        title: 'Heads up!',
-        description:
-            "🚧 This feature isn't implemented yet—but don't worry! You can request it in your next prompt! 🚀",
-    });
+  toast({
+    title: 'Heads up!',
+    description:
+      "🚧 This feature isn't implemented yet—but don't worry! You can request it in your next prompt! 🚀",
+  });
 
 
 
@@ -311,7 +312,7 @@ const productsData = [
     features: ['M1A Rifle', 'XD-S Pistol Series', 'Hellcat Micro-Compact'],
     sliderImages: [
       { src: '/Products/spring/spring-1.jpg', alt: 'Springfield M1A rifle' },
-            { src: '/Products/spring/spring-2.jpg', alt: 'Springfield M1A rifle' },
+      { src: '/Products/spring/spring-2.jpg', alt: 'Springfield M1A rifle' },
       { src: '/Products/spring/spring-3.jpg', alt: 'Springfield M1A rifle' },
 
     ],
@@ -369,142 +370,141 @@ const productsData = [
 // ];
 
 const ProductBrandSection = ({ data, isFirst }) => {
-    const ref = useRef(null);
-    const { scrollYProgress } = useScroll({
-        target: ref,
-        offset: ['start end', 'end start'],
-    });
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ['start end', 'end start'],
+  });
 
-    // start below (20%), end at slight overlap (-5%)
-    const y = useTransform(scrollYProgress, [0, 1], ['30%', '-40%']);
+  // start below (20%), end at slight overlap (-5%)
+  const y = useTransform(scrollYProgress, [0, 1], ['30%', '-40%']);
 
-    return (
-        <div
-            id={data.id}
-            ref={ref}
-            className={`relative ${isFirst ? '' : 'pt-16'}`} // ✅ only add top padding for non-first
+  return (
+    <div
+      id={data.id}
+      ref={ref}
+      className={`relative ${isFirst ? '' : 'pt-16'}`} // ✅ only add top padding for non-first
+    >
+      {/* Slider */}
+      <div className="relative h-[60vh] lg:h-[80vh] bg-black z-0">
+        <Swiper
+          modules={[Navigation, Autoplay]}
+          navigation
+          loop={true}
+          autoplay={{
+            delay: 4000,
+            disableOnInteraction: false,
+          }}
+          className="h-full"
         >
-            {/* Slider */}
-            <div className="relative h-[60vh] lg:h-[80vh] bg-black z-0">
-                <Swiper
-                    modules={[Navigation, Autoplay]}
-                    navigation
-                    loop={true}
-                    autoplay={{
-                        delay: 4000,
-                        disableOnInteraction: false,
-                    }}
-                    className="h-full"
-                >
-                    {data.sliderImages.map((img, index) => (
-                        <SwiperSlide key={index}>
-                            <img
-                                src={img.src}
-                                alt={img.alt}
-                                className="w-full h-full object-cover"
-                            />
-                        </SwiperSlide>
-                    ))}
-                </Swiper>
-            </div>
+          {data.sliderImages.map((img, index) => (
+            <SwiperSlide key={index}>
+              <img
+                src={img.src}
+                alt={img.alt}
+                className="w-full h-full object-cover"
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
 
-            {/* Feature card (scrolls up) */}
-            <div className="relative h-[65vh] flex items-center justify-center z-10">
-                <motion.div
-                    style={{ y }}
-                    className="w-[95%] md:w-[85%] h-[120%] relative rounded-lg overflow-hidden shadow-2xl"
-                >
-                    <div
-                        style={{ backgroundImage: `url(${data.featureBg})` }}
-                        className="w-full h-full bg-repeat bg-auto"
+      {/* Feature card (scrolls up) */}
+      <div className="relative h-[65vh] flex items-center justify-center z-10">
+        <motion.div
+          style={{ y }}
+          className="w-[95%] md:w-[85%] h-[120%] relative rounded-lg overflow-hidden shadow-2xl"
+        >
+          <div
+            style={{ backgroundImage: `url(${data.featureBg})` }}
+            className="w-full h-full bg-repeat bg-auto"
+          >
+            <div className="absolute inset-0 p-10 md:p-12 lg:p-20 flex flex-col justify-between">
+
+              <div className="flex flex-col md:flex-row justify-between items-start gap-6">
+                {/* Logo + description */}
+                <div className="flex-1 text-left">
+                  <img
+                    src={data.logo}
+                    alt={data.logoAlt}
+                    className="w-[50%] md:w-auto h-auto md:h-40 mb-4"
+                  />
+                  <p className="subtext text-white/80 text-lg md:text-lg lg:text-lg xl:text-xl leading-relaxed max-w-full md:max-w-3xl">
+                    {data.description}
+                  </p>
+                </div>
+
+                {/* Features list */}
+                <ul className="w-auto text-left self-start md:self-center">
+                  {data.features.map((feature) => (
+                    <li
+                      key={feature}
+                      className="font-extrabold text-white/90 text-xl md:text-2xl italic tracking-wide md:tracking-wider uppercase mb-2 border-b-2 border-primary pb-1 w-fit"
                     >
-                        <div className="absolute inset-0 p-10 md:p-12 lg:p-20 flex flex-col justify-between">
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+              </div>
 
-                            <div className="flex flex-col md:flex-row justify-between items-start gap-6">
-                                {/* Logo + description */}
-                                <div className="flex-1 text-left">
-                                    <img
-                                        src={data.logo}
-                                        alt={data.logoAlt}
-                                        className="w-[50%] md:w-auto h-auto md:h-40 mb-4"
-                                    />
-                                    <p className="subtext text-white/80 text-lg md:text-lg lg:text-lg xl:text-xl leading-relaxed max-w-full md:max-w-3xl">
-  {data.description}
-</p>
-                                </div>
-
-                                {/* Features list */}
-                                <ul className="w-auto text-left self-start md:self-center">
-                                    {data.features.map((feature) => (
-                                        <li
-                                            key={feature}
-                                            className="font-extrabold text-white/90 text-xl md:text-2xl italic tracking-wide md:tracking-wider uppercase mb-2 border-b-2 border-primary pb-1 w-fit"
-                                        >
-                                            {feature}
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-
-                            {/* Button */}
-                            <div className="text-center mt-6 md:mt-0">
-                                <Button
-                                    onClick={notImplemented}
-                                    size="lg"
-                                    className="uppercase tracking-wider font-extrabold text-white orange-gradient hover:brightness-110 transition-all shadow-lg shadow-orange-900/30"
-                                >
-                                    About {data.name}
-                                </Button>
-                            </div>
-                        </div>
-                    </div>
-                </motion.div>
+              {/* Button */}
+              <div className="text-center mt-6 md:mt-0">
+                <Link
+  to="/contact"
+  className="uppercase tracking-wider font-extrabold text-white orange-gradient hover:brightness-110 transition-all shadow-lg shadow-orange-900/30 inline-flex items-center justify-center px-6 py-3 rounded-lg"
+>
+  Contact Us for {data.name}
+</Link>
+              </div>
             </div>
+          </div>
+        </motion.div>
+      </div>
 
 
 
-        </div>
-    );
+    </div>
+  );
 };
 
 export default function ProductsPage() {
-    return (
-        <div className="bg-black text-white">
-            <Helmet>
-                <title>Our Products | Top Arms</title>
-                <meta
-                    name="description"
-                    content="Explore our curated collection of elite firearms, ammunition, and accessories from the world's leading brands."
-                />
-                <meta property="og:title" content="Our Products | Top Arms" />
-                <meta
-                    property="og:description"
-                    content="Discover premium products from BPS, Cabot Guns, Winchester, and more."
-                />
-            </Helmet>
+  return (
+    <div className="bg-black text-white">
+      <Helmet>
+        <title>Our Products | Top Arms</title>
+        <meta
+          name="description"
+          content="Explore our curated collection of elite firearms, ammunition, and accessories from the world's leading brands."
+        />
+        <meta property="og:title" content="Our Products | Top Arms" />
+        <meta
+          property="og:description"
+          content="Discover premium products from BPS, Cabot Guns, Winchester, and more."
+        />
+      </Helmet>
 
-            {/* Hero Section */}
-            <section className="relative h-[100vh] min-h-[500px] flex items-center justify-center text-white bg-[url('/background/background.jpg')] bg-repeat bg-auto">
-                <motion.div
-                    className="relative z-10 text-center section-padding max-w-4xl"
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8 }}
-                >
-                    <h1 className="headline text-5xl sm:text-5xl">Our Products</h1>
-                    <p className="subtext mt-6 text-white text-xl  w-[80%] md:w-[70%] mx-auto">
+      {/* Hero Section */}
+      <section className="relative h-[100vh] min-h-[500px] flex items-center justify-center text-white bg-[url('/background/background.jpg')] bg-repeat bg-auto">
+        <motion.div
+          className="relative z-10 text-center section-padding max-w-4xl"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          <h1 className="headline text-5xl sm:text-5xl">Our Products</h1>
+          <p className="subtext mt-6 text-white text-xl  w-[80%] md:w-[70%] mx-auto">
 
 
-                        We are always eager to bring to you all the best possible brands of firearms, ammunition, security equipment, protective gears and armour, hunting equipment and all related accessories. Our experienced and well-trained team is passionate about what we do and most importantly, we are always ready to provide our best advise and asistance to all our valued customers.
-                    </p>
-                </motion.div>
-            </section>
+            We are always eager to bring to you all the best possible brands of firearms, ammunition, security equipment, protective gears and armour, hunting equipment and all related accessories. Our experienced and well-trained team is passionate about what we do and most importantly, we are always ready to provide our best advise and asistance to all our valued customers.
+          </p>
+        </motion.div>
+      </section>
 
-            {/* Product Sections */}
-            {productsData.map((data, index) => (
-                <ProductBrandSection key={data.id} data={data} isFirst={index === 0} />
-            ))}
-            <FeatureBanner/>
-        </div>
-    );
+      {/* Product Sections */}
+      {productsData.map((data, index) => (
+        <ProductBrandSection key={data.id} data={data} isFirst={index === 0} />
+      ))}
+      <FeatureBanner />
+    </div>
+  );
 }

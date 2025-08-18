@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { teamData } from '@/data/teamData';
 import { Button } from '@/components/ui/button';
+    import FeatureBanner from "@/components/FeatureBanner";
+
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -96,6 +98,8 @@ export default function TeamPage() {
             ))}
           </motion.div>
         </section>
+                    <FeatureBanner/>
+        
       </div>
     </>
   );
